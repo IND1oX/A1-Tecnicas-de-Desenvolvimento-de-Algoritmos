@@ -2,8 +2,11 @@
 
 Este repositório contém quatro programas desenvolvidos em Python para a Avaliação A1 da disciplina Técnicas de Desenvolvimento de Algoritmos.
  Cada exercício aborda um conceito essencial visto em aula: Estruturas Condicionais, Estruturas de Repetição, Listas e Dicionários.
+ 
 🧩 01. Estruturas Condicionais – Classificação de Temperatura
+
 Arquivo: 1-estruturas-condicionais/classificacao_temperatura.py
+
 Este programa solicita que o usuário digite uma temperatura em graus Celsius e, usando if / elif / else, classifica o clima como:
 Frio → temperatura abaixo de 15
 
@@ -30,7 +33,9 @@ else:
 
 
 🔁 02. Estruturas de Repetição
+
 Pasta: 2-estruturas-repeticao/
+
 Programas que exibem números pares de 1 a 100, utilizando dois tipos de laço:
  ✔ for
  ✔ while
@@ -60,7 +65,9 @@ while numero <= 100:
 
 
 📝 03. Listas – Cadastro de Alunos
+
 Arquivo: 3-listas/cadastro_alunos.py
+
 Programa que permite ao usuário digitar nomes de alunos até escrever "sair".
  Todos os nomes digitados são armazenados em uma lista, que é exibida ao final.
 📌 Código utilizado:
@@ -85,7 +92,9 @@ for aluno in lista_alunos:
 
 
 🛒 04. Dicionários – Cadastro de Produtos
+
 Arquivo: 4-dicionarios/cadastro_produtos.py
+
 Programa que cadastra produtos contendo nome e preço, armazenando cada produto em um dicionário.
  Todos os dicionários são armazenados em uma lista, que é exibida ao final.
 📌 Código utilizado:
