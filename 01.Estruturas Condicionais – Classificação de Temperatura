@@ -1,0 +1,121 @@
+# 01 Programa para classificar a temperatura informada pelo usuário
+
+# Entrada: o usuário digita a temperatura em graus Celsius
+temperatura = float(input("Digite a temperatura em graus Celsius: "))
+
+
+# Estrutura condicional para classificar a temperatura
+if temperatura < 15:
+    print("Clima frio.")
+elif temperatura >= 15 and temperatura <= 25:
+    print("Clima agradável.")
+else:
+    print("Clima quente.")
+
+
+Explicação Linha a linha
+# Programa para classificar a temperatura informada pelo usuário
+
+
+Comentário: serve apenas para humanos; o interpretador Python ignora. Documenta propósito do script.
+
+
+# Entrada: o usuário digita a temperatura em graus Celsius
+
+
+Comentário explicativo sobre a próxima linha.
+
+
+temperatura = float(input("Digite a temperatura em graus Celsius: "))
+
+
+input(...): função built-in que exibe a string entre parênteses no console e retorna o texto digitado pelo usuário (sempre como str).
+
+
+float(...): converte a string retornada por input em um número de ponto flutuante (ex.: "20.5" → 20.5). Se o usuário digitar algo não numérico, ocorrerá um erro (ValueError).
+
+
+temperatura = ...: atribui o valor numérico convertido à variável temperatura.
+
+
+# Estrutura condicional para classificar a temperatura
+
+
+Comentário.
+
+
+if temperatura < 15:
+
+
+Inicia uma condição: testa se o valor em temperatura é menor que 15. Se verdadeiro, executa o bloco indentado abaixo.
+
+
+print("Clima frio.")
+
+
+print(...): função que escreve a string no console. Executada somente se a condição do if for verdadeira.
+
+
+elif temperatura >= 15 and temperatura <= 25:
+
+
+elif (else if): avalia se a condição anterior foi falsa e esta é verdadeira.
+
+
+>= e <=: operadores relacionais (maior ou igual, menor ou igual).
+
+
+and: operador lógico que exige que ambas as subcondições sejam verdadeiras (temperatura entre 15 e 25 inclusive).
+
+
+print("Clima agradável.")
+
+
+Executado se o elif for verdadeiro.
+
+
+else:
+
+
+Caso nenhuma das condições anteriores seja verdadeira, executa o bloco abaixo.
+
+
+print("Clima quente.")
+
+
+Mensagem para quando temperatura > 25.
+
+
+Fluxo de execução (resumido)
+Programa lê entrada do usuário.
+
+
+Converte para float e guarda em temperatura.
+
+
+Avalia if temperatura < 15. Se sim → imprime “Clima frio.” e termina.
+
+
+Senão, avalia elif temperatura >= 15 and temperatura <= 25. Se sim → imprime “Clima agradável.” e termina.
+
+
+Caso contrário → executa else e imprime “Clima quente.”.
+
+
+Conceitos aplicados
+Entrada e saída (input, print).
+
+
+Conversão de tipo (float).
+
+
+Estruturas condicionais (if, elif, else).
+
+
+Operadores relacionais e lógicos (<, >=, <=, and).
+
+
+Atribuição (=).
+
+
+Comentários para documentação.
