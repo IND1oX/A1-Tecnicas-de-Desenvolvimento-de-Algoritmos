@@ -1,0 +1,119 @@
+# 03 Programa para armazenar nomes de alunos em uma lista
+
+lista_alunos = []  # Lista vazia para guardar os nomes
+
+
+while True:
+    nome = input("Digite o nome do aluno (ou 'sair' para finalizar): ")
+
+
+    # Condição para encerrar o cadastro
+    if nome.lower() == "sair":
+        break
+
+
+    # Adiciona o nome digitado na lista
+    lista_alunos.append(nome)
+
+
+# Exibe todos os alunos cadastrados
+print("\nLista de alunos cadastrados:")
+for aluno in lista_alunos:
+    print(aluno)
+l)
+
+
+Explicação Linha a linha
+# Programa... — comentário.
+
+
+lista_alunos = []
+
+
+Cria uma lista vazia (estrutura mutável que guarda elementos em ordem).
+
+
+while True:
+
+
+Inicia um loop infinito; controlado internamente com break.
+
+
+nome = input("Digite o nome do aluno (ou 'sair' para finalizar): ")
+
+
+Lê uma string digitada pelo usuário; armazena em nome.
+
+
+# Condição para encerrar o cadastro — comentário.
+
+
+if nome.lower() == "sair":
+
+
+nome.lower(): método de string que retorna uma versão em minúsculas; assim o teste fica case-insensitive (aceita "Sair", "SAIR", etc).
+
+
+Compara a string em minúsculas com "sair".
+
+
+break
+
+
+Interrompe o while imediatamente, saindo do loop.
+
+
+# Adiciona o nome digitado na lista — comentário.
+
+
+lista_alunos.append(nome)
+
+
+.append(...): método de lista que insere o elemento no final da lista.
+
+
+# Exibe todos os alunos cadastrados — comentário.
+
+
+print("\nLista de alunos cadastrados:")
+
+
+Imprime uma linha em branco \n e o título.
+
+
+for aluno in lista_alunos:
+
+
+Itera cada elemento armazenado em lista_alunos.
+
+
+print(aluno)
+
+
+Imprime o nome do aluno atual.
+
+
+Fluxo de execução
+O while True permite várias entradas; a cada iteração:
+
+
+lê nome; se for "sair" (qualquer capitalização) → break → sai e segue para exibição; senão adiciona nome à lista e repete.
+
+
+Depois do break, o programa imprime todos os nomes da lista com um for.
+
+
+Conceitos aplicados
+Listas (criação e método append).
+
+
+Loop infinito controlado com break.
+
+
+Interação com o usuário via input.
+
+
+Iteração com for para percorrer coleção.
+
+
+Método de string lower() para normalização.
