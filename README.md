@@ -1,4 +1,5 @@
 📘 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos
+
 Este repositório contém quatro programas desenvolvidos em Python para a Avaliação A1 da disciplina Técnicas de Desenvolvimento de Algoritmos.
  Cada exercício aborda um conceito essencial visto em aula: Estruturas Condicionais, Estruturas de Repetição, Listas e Dicionários.
 🧩 01. Estruturas Condicionais – Classificação de Temperatura
