@@ -1,0 +1,147 @@
+# 04 Programa para cadastrar produtos usando dicionários
+
+lista_produtos = []  # Lista que vai armazenar vários dicionários
+
+
+while True:
+    nome_produto = input("Digite o nome do produto (ou 'sair' para finalizar): ")
+
+
+    # Condição para encerrar
+    if nome_produto.lower() == "sair":
+        break
+
+
+    # Recebe o preço do produto
+    preco_produto = float(input("Digite o preço do produto: "))
+
+
+    # Cria um dicionário com nome e preço
+    produto = {
+        "nome": nome_produto,
+        "preco": preco_produto
+    }
+
+
+    # Adiciona o dicionário na lista
+    lista_produtos.append(produto)
+
+
+# Exibe todos os produtos cadastrados
+print("\nLista de produtos cadastrados:")
+for item in lista_produtos:
+    print(f"Produto: {item['nome']} | Preço: R$ {item['preco']}")
+
+
+Explicação Linha a linha
+# Programa ... — comentário.
+
+
+lista_produtos = []
+
+
+Cria uma lista vazia que irá armazenar dicionários (cada dicionário representa um produto).
+
+
+while True:
+
+
+Loop infinito para repetição de cadastro até break.
+
+
+nome_produto = input("Digite o nome do produto (ou 'sair' para finalizar): ")
+
+
+Lê nome do produto do usuário.
+
+
+# Condição para encerrar — comentário.
+
+
+if nome_produto.lower() == "sair":
+
+
+Teste para encerrar (case-insensitive).
+
+
+break
+
+
+Sai do loop quando o usuário digitar "sair".
+
+
+# Recebe o preço do produto — comentário.
+
+
+preco_produto = float(input("Digite o preço do produto: "))
+
+
+Lê uma string com input e converte para float. Se entrada inválida (ex.: letras), ocorre ValueError.
+
+
+# Cria um dicionário com nome e preço — comentário.
+
+
+produto = { "nome": nome_produto, "preco": preco_produto }
+
+
+Cria um dicionário com chaves "nome" e "preco". Dicionário armazena pares chave:valor (sem ordem garantida em versões muito antigas de Python — nas versões modernas a ordem de inserção é mantida, mas isso não é importante neste exercício).
+
+
+# Adiciona o dicionário na lista — comentário.
+
+
+lista_produtos.append(produto)
+
+
+Adiciona o dicionário produto ao final da lista lista_produtos.
+
+
+# Exibe todos os produtos cadastrados — comentário.
+
+
+print("\nLista de produtos cadastrados:")
+
+
+Título de saída com uma quebra de linha.
+
+
+for item in lista_produtos:
+
+
+Itera cada dicionário da lista.
+
+
+print(f"Produto: {item['nome']} | Preço: R$ {item['preco']}")
+
+
+f"..." é uma f-string (formatação literal): permite inserir expressões Python dentro de {} diretamente na string.
+
+
+item['nome'] e item['preco'] acessam os valores do dicionário pelas chaves.
+
+
+Imprime uma linha formatada para cada produto.
+
+
+Fluxo de execução
+O while True permite cadastrar vários produtos: pede nome; se "sair" → sai; senão pede preço (converte para float); monta um dicionário { "nome": ..., "preco": ... } e adiciona à lista.
+
+
+Após break, o for percorre lista_produtos e exibe cada produto.
+
+
+Conceitos aplicados
+Dicionários (criação, acesso por chave).
+
+
+Listas de dicionários (coleção de registros).
+
+
+Conversão de tipo (float) e manipulação de entrada.
+
+
+f-strings para formatação de saída.
+
+
+Controle de laços (while, for) e break.
